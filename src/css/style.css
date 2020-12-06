@@ -4,15 +4,15 @@
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
-    margin-top: 10%;
     color: #6f6f6f;
     z-index: 3;
 }
 body{
     z-index: 1;
+
 }
 .a-scene{
-    display: block;
+    position: relative;
     z-index: 2;
-    margin-top: 5%;
+    margin-top: 0%;
 }
