@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="aframe-ar.js"></script>
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/skeleton.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <body>
+    
+    <a-scene embedded arjs renderer="antialias: false; logarithmicDepthBuffer: true">
+      <canvas id="canvasExample"> 
+    </canvas>
+      
+          <!--<a-assets>
+            <a-asset-item id="r2d2-obj" src="models/r2-d2.obj"></a-asset-item>
+            <a-asset-item id="r2d2-mtl" src="models/r2-d2.mtl"></a-asset-item>
+            <a-asset-item id="divan-obj" src="models/divanjulia.obj"></a-asset-item>
+            <a-asset-item id="divan-mtl" src="models/divanjulia.mtl"></a-asset-item>
+          </a-assets>-->
+         
+          <a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-Download.patt'>
+        <!--<a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/lbelfield/augmented-reality/master/src/components/trainTicket/train-ticket.patt'>
+            <a-entity
+              position="0 0 0"
+              scale="0.05 0.05 0.05"
+              gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+            ></a-entity>-->
+            <a-entity obj-model="obj: #r2d2-obj; mtl: #r2d2-mtl" position="0 0 0" scale="0.005 0.005 0.005"></a-entity> <!--rotation="-90 0 -90"-->
+          </a-marker>
+          <a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt'>
+            <a-entity
+              position="0 0 0"
+              scale="0.2 0.2 0.2"
+              gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/autolowpoly/carlowpoly.gltf">
+            ></a-entity>
+          </a-marker>
+          <a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/fermiumsunset/dump/main/patternBrille.patt'>
+            <a-entity obj-model="obj: #divan-obj; mtl: #divan-mtl" position="0 0 -3" scale="0.0003 0.0003 0.0003"></a-entity>
+          </a-marker>
+          <a-entity camera></a-entity>
+
+       
+            <!--<nav>
+              <ul>
+                <li>Studiengang: Medientechnik</li>
+                <li>Kurs:        3D-Modellierung</li>
+                <li>Semester:    4.</li>
+                <li>Urheber:     Matthias Kräh</li>
+                <li>Ein 3D-Modell des 1948 Davis Divan in Eigenpräsentation.</li>
+              </ul>
+            </nav>
+    <nav>
+      <div class="container">
+      <span class="material-icons menu item1">
+        menu
+      </span>
+    </nav>-->
+    </a-scene>
+    
+  </body>
+</html>
