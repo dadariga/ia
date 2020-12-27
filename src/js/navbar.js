@@ -8,6 +8,10 @@
   $('.dropdown-trigger').dropdown();*/
 
   $(document).ready(function(){
-    $(".dropdown-trigger").dropdown();
+    
+  
+  $("#dropdown").click(function(){
+    $(".droppeddown").css("visibility", "visible");
+  })
   })
         
