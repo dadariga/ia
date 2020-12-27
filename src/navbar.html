@@ -22,16 +22,18 @@
     <title>Only navbar</title>
 </head>
 <body>
-    <div style='position: fixed; top: 10%; width:100%; text-align: center; z-index: 1;'>
-		<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - tango example for a-frame by <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
-    </div>
-    
-    <navlinks style="position: fixed; top: 2%">
+    <navlinks style="position: fixed; left: 5%;top: 2%">
         <a class="navbar-brand" href="#">THD</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     </navlinks>  
+    <navrechts style="position: fixed; left: 90%; top: 2%">
+      <a class="navbar-brand" href="#"><img src="images/icons8-menü.svg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </navrechts>
     <a-scene embedded arjs renderer="antialias: true; logarithmicDepthBuffer: true" class="ascene">
         <canvas id="canvasExample"> </canvas>
             <a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-Download.patt'>
