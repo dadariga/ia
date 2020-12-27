@@ -9,14 +9,14 @@
 
   $(document).ready(function(){
     
-  
+  var counter;
   $("#dropdown").click(function(){
-    var counter = 0;
+    
   if(counter == 0){
     $(".menu").css("visibility", "visible");
-    counter = 1;}else{
+    return counter = 1;}else{
       $(".menu").css("visibility", "hidden");
-      counter = 0;
+      return counter = 0;
     }
   })
   })

@@ -23,6 +23,7 @@ margin: 0;
    right: 0;
     float: right;
 }
+
 #navbar-brand{
   display: block;
   position: fixed;
@@ -32,7 +33,7 @@ margin: 0;
 #dropdown{
   display: block;
   position: fixed;
-  z-index: 6;
+  z-index: 8;
 }
 .droppeddown:hover{
   visibility: visible;
@@ -43,7 +44,7 @@ margin: 0;
 .menu{
   display: block;
   position: fixed;
-  background-color: blue ;
+  background-image: linear-gradient(45deg, #009fe3, #1a4273);  
   width: 100%;
   height: 110%;
   top: -10%;
@@ -52,15 +53,39 @@ margin: 0;
   visibility: hidden;
 }
 
-.header{
-  display: block;
-  position: fixed;
-  
-}
-
 .rechteck{
   position: fixed;
   width: 40%;
   top: 10%;
   left: 10%;
+}
+#sprache{
+  display: block;
+  position: relative;
+  z-index: 8;
+  top: 25%;
+  left: 25%;
+  color: white;
+}
+#icons{
+position: relative;
+border-radius: 50px;
+background: #55b9f3;
+box-shadow:  33px 33px 65px #489dcf, 
+             -33px -33px 65px #62d5ff;
+width: 20%;
+top: 40%;
+left: 20%;
+height: 35%;
+}
+#icons2{
+position: relative;
+border-radius: 50px;
+background: #55b9f3;
+box-shadow:  33px 33px 65px #489dcf, 
+             -33px -33px 65px #62d5ff;
+width: 20%;
+top: 5%;
+left: 60%;
+height: 35%;
 }
