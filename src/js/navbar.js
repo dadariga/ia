@@ -11,7 +11,7 @@
     
   
   $("#dropdown").click(function(){
-    $(".droppeddown").css("visibility", "visible");
+    $(".menu").css("visibility", "visible");
   })
   })
         
