@@ -27,6 +27,7 @@ margin: 0;
   display: block;
   position: fixed;
   z-index: 6;
+  color: red;
 }
 #dropdown{
   display: block;
@@ -48,10 +49,18 @@ margin: 0;
   top: -10%;
   z-index: 5;
   left: 0%;
-  visibility: visible;
+  visibility: hidden;
 }
+
+.header{
+  display: block;
+  position: fixed;
+  
+}
+
 .rechteck{
   position: fixed;
   width: 40%;
   top: 10%;
+  left: 10%;
 }
