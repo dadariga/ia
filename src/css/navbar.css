@@ -46,7 +46,7 @@ margin: 0;
   visibility: hidden;
 }
 .closemedientechnik{
-  
+
 }
 .droppeddown:hover{
   visibility: visible;
@@ -144,4 +144,19 @@ height: 35%;
   height: 110%;
   z-index: 6;
   margin-bottom: 10%;
+}
+#imgleft{
+  position: relative;
+  display: block;
+  width: 13%;
+  margin-top: 32%;
+  left: 20%;
+}
+#imgright{
+  position: relative;
+  display: block;
+  width: 13%;
+  margin-top: 32%;
+  left: 40%;
+  z-index: 7;
 }
