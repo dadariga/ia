@@ -73,10 +73,10 @@ margin: 0;
 }
 #icons{
 position: relative;
-border-radius: 50px;
-background: #55b9f3;
-box-shadow:  33px 33px 65px #489dcf, 
-             -33px -33px 65px #62d5ff;
+border-radius: 46px;
+background-image: linear-gradient(45deg, #009fe3, #1a4273);  
+box-shadow:  54% 54% 106% #122d4e,
+             -54% -54% 106% #225798;
 width: 20%;
 top: 45%;
 left: 20%;
@@ -85,9 +85,13 @@ height: 35%;
 #icons2{
 position: relative;
 border-radius: 50px;
-background: #55b9f3;
-box-shadow:  33px 33px 65px #489dcf, 
-             -33px -33px 65px #62d5ff;
+border-radius: 48px;
+
+background: #009fe3;
+
+box-shadow:  27px 27px 54px #007eb3,
+
+             -27px -27px 54px #00c0ff;
 width: 20%;
 top: 10%;
 left: 60%;
