@@ -1,5 +1,5 @@
 
-    .navbar {
+    /*.navbar {
       position: absolute;
       padding-top: 0em;
       bottom: 0;
@@ -26,4 +26,15 @@ body{
 
     z-index: 1;
     margin-bottom: 10em;
+}
+*/ 
+/* NEw TRy*/
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index:1;
 }

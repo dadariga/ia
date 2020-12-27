@@ -1,0 +1,26 @@
+/*Navbar*/
+.collapse{
+    display: block;
+    position: fixed;
+    float: right;
+    z-index: 2;
+}
+
+/* Rest */
+
+html, body{
+margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  z-index:1;
+}
+.right{
+    display: block;
+    position: fixed;
+    top: 10%;
+   right: 0;
+    float: right;
+}
+
