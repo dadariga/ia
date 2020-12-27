@@ -97,3 +97,11 @@ top: 10%;
 left: 60%;
 height: 35%;
 }
+
+#house{
+  position: relative;
+  width: 80%;
+  top: 20%;
+  left: 10%;
+
+}
