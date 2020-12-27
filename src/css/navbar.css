@@ -136,6 +136,9 @@ height: 35%;
   transition-property: opacity, left, top, height;
   transition-duration: 3s, 5s;
 }
+.medientechniktext{
+  width: 30%;
+}
 #splashscreen {
   margin-top: 0%;
   position: fixed;
@@ -146,17 +149,25 @@ height: 35%;
   margin-bottom: 10%;
 }
 #imgleft{
-  position: relative;
-  display: block;
+  position: absolute;
+  display: inline-block;
   width: 13%;
   margin-top: 32%;
   left: 20%;
 }
 #imgright{
-  position: relative;
-  display: block;
+  position: absolute;
+  display: inline-block;
   width: 13%;
   margin-top: 32%;
-  left: 40%;
+  left: 67%;
   z-index: 7;
+}
+#textlefttop{
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  top: 47%;
+  left: 10%;
+  font-size: 6vh;
 }
