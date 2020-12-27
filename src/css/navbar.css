@@ -45,6 +45,9 @@ margin: 0;
 .close{
   visibility: hidden;
 }
+.iconedge:hover{
+  cursor: pointer;
+}
 .closemedientechnik{
 
 }
@@ -137,7 +140,9 @@ height: 35%;
   transition-duration: 3s, 5s;
 }
 .medientechniktext{
-  width: 30%;
+  display:block;
+  width: 50%;
+  height: 100%;
 }
 #splashscreen {
   margin-top: 0%;
@@ -149,15 +154,15 @@ height: 35%;
   margin-bottom: 10%;
 }
 #imgleft{
-  position: absolute;
-  display: inline-block;
+  position: relative;
+  justify-content: center;
   width: 13%;
-  margin-top: 32%;
+  height: 10%;
+  margin-top: 72%;
   left: 20%;
 }
 #imgright{
-  position: absolute;
-  display: inline-block;
+  position: relative;
   width: 13%;
   margin-top: 32%;
   left: 67%;
@@ -165,9 +170,37 @@ height: 35%;
 }
 #textlefttop{
   position: absolute;
-  display: inline-block;
   width: auto;
-  top: 47%;
-  left: 10%;
+  top: 47vh;
+  left: 10vw;
+  text-align: center;
   font-size: 6vh;
+}
+#textrighttop{
+  position: absolute;
+  width: auto;
+  top: 47vh;
+  left: 63vw;
+  font-size: 6vh;
+  text-align: center;
+}
+#textrightbottom{
+  position: absolute;
+  width: auto;
+  top: 80vh;
+  left: 58vw;
+  font-size: 4vh;
+  text-align: center;
+}
+.map{
+  display: block;
+  position: fixed;
+  width: 5%;
+  top: 88%;
+  left: 3%;
+  z-index: 8;
+  transition: margin-right 4s ease-in-out 1s;
+}
+.map:hover{
+  cursor: pointer;
 }
