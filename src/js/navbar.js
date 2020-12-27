@@ -10,14 +10,19 @@
   $(document).ready(function(){
     
   var counter;
-  $("#dropdown").click(function(){
-    
-  if(counter == 0){
+  var counter2;
+  $(".dropdown").click(function(){
     $(".menu").css("visibility", "visible");
-    return counter = 1;}else{
-      $(".menu").css("visibility", "hidden");
-      return counter = 0;
-    }
+      $(".dropdown").css("visibility", "hidden");
+      $(".close").css("visibility", "visible");
   })
+  $(".close").click(function(){
+    $(".menu").css("visibility", "hidden");
+      $(".close").css("visibility", "hidden");
+      $(".dropdown").css("visibility", "visible");
+  })
+  $("#icons").click(function(){
+      $(".medientechnik").css("visibility", "visible");
+    })
   })
         
