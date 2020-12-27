@@ -8,9 +8,6 @@
   $('.dropdown-trigger').dropdown();*/
 
   $(document).ready(function(){
-    
-  var counter;
-  var counter2;
   $(".dropdown").click(function(){
     $(".menu").css("visibility", "visible");
       $(".dropdown").css("visibility", "hidden");
@@ -21,8 +18,15 @@
       $(".close").css("visibility", "hidden");
       $(".dropdown").css("visibility", "visible");
   })
+
   $("#icons").click(function(){
       $(".medientechnik").css("visibility", "visible");
     })
+
+    $(".closemedientechnik").click(function(){
+      $(".medientechnik").css("visibility", "hidden");
+        
+    })
+  
   })
         
