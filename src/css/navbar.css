@@ -41,6 +41,25 @@ margin: 0;
   z-index: 8;
   transition: margin-right 4s ease-in-out 1s;
 }
+.arrowtoleft{
+  display: block;
+  position: fixed;
+  width: 5%;
+  top: 50%;
+  left: 0;
+  transform: rotate(180deg);
+  z-index: 8;
+  transition: margin-right 4s ease-in-out 1s;
+}
+.arrowtoright{
+  display: block;
+  position: fixed;
+  width: 5%;
+  top: 50%;
+  
+  z-index: 8;
+  transition: margin-right 4s ease-in-out 1s;
+}
 .close{
   visibility: hidden;
 }
@@ -430,6 +449,7 @@ color: white;
   width: 5%;
   opacity: 60%;
   z-index: 10;
+  visibility: visible;
 }
 .closemap:hover{
   cursor: pointer;

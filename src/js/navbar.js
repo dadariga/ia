@@ -38,6 +38,7 @@
     window.open("karte.html", "_self");
   })
   $(".closemap").click(function(){
+    $(".closemap").css("visibility", "hidden");
     window.open("navbar.html", "_self");
       
   })
