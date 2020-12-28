@@ -22,13 +22,20 @@
   $("#icons").click(function(){
       $(".medientechnik").css("visibility", "visible");
     })
-
+    $("#icons2").click(function(){
+      $(".language").css("visibility", "visible");
+    })
     $(".closemedientechnik").click(function(){
       $(".medientechnik").css("visibility", "hidden");
         
     })
+    $(".closelanguage").click(function(){
+      $(".language").css("visibility", "hidden");
+      $(".menu").css("visibility", "visible");
+        
+    })
   $(".map").click(function(){
-    window.open("karte.html");
+    window.open("karte.html", "_self");
   })
   
   function load(){
