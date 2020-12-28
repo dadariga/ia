@@ -7,27 +7,45 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<link rel="stylesheet" href="css/navbar.css">
+	
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="./js/leaflet-src.js"></script> 
+	<script src="js/navbar.js"></script>
 	
     <!--<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>-->
-	<!--<style>
+	<style>
 		#mapid {
+			position: relative;
 			margin: 0px;
 			height: 96vh;
 			width: 99vw;
+			z-index: 1;
+			overflow-y: hidden;
 		}
-   </style>-->
+.closemap{
+  position: fixed;
+  display: block;
+  left: 90%;
+  top: 5%;
+  width: 5%;
+  opacity: 100%;
+  z-index: 2;
+  visibility: visible;
+}
+.closemap:hover{
+  cursor: pointer;
+}
+   </style>
 
 	
 </head>
 <body>
 
+	<div id="mapid"></div>
+	
+	<img src="images/deutschland.png" class="closemap">
 
-<img src="images/deutschland.png" class="closemap">
-<div id="mapid"></div>
 <script>
 
 	var mymap = L.map('mapid', {maxBounds: [
@@ -71,10 +89,7 @@
     markerBrille.bindPopup('<p>Stopmotion-Film</p>').addTo(mymap);
 
     
-	$(".closemap").click(function(){
-    $(".closemap").css("visibility", "hidden");
-	window.open("navbar.html", "_self");
-	})
+	
 	//Kartenlayer drüber, Marker und Text	
 
 </script>

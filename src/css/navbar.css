@@ -436,21 +436,3 @@ color: white;
 
 /*MAP*/
 
-#mapid {
-  margin: 0px;
-  height: 96vh;
-  width: 99vw;
-  z-index: 5;
-}
-.closemap{
-  position: absolute;
-  left: 90%;
-  top: 5%;
-  width: 5%;
-  opacity: 60%;
-  z-index: 10;
-  visibility: visible;
-}
-.closemap:hover{
-  cursor: pointer;
-}
