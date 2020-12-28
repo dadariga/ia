@@ -28,7 +28,7 @@
         
     })
   $(".map").click(function(){
-    window.open("karte.html");
+    window.open("karte.html", "_self");
   })
   
   function load(){

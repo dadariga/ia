@@ -48,7 +48,18 @@ margin: 0;
   cursor: pointer;
 }
 .closemedientechnik{
-
+  display: block;
+  position: fixed;
+  width: 5%;
+  top: 5%;
+  left: 90%;
+  z-index: 8;
+  opacity: 60%;
+  transition: margin-right 4s ease-in-out 1s;
+}
+.closemedientechnik:hover{
+  opacity: 100%;
+  cursor: pointer;
 }
 .droppeddown:hover{
   visibility: visible;
@@ -88,46 +99,93 @@ margin: 0;
   position: relative;
   border-radius: 20%;
   background-color: #009fe3;
-  box-shadow:  -50% -50% 100% #1a4273,
-               50% 50% 100% #1a4273;
+  box-shadow:  -9px -9px 18px #1a4273,
+               9px 9px 18px #1a4273;
   opacity: 60%;
-  border: 0.1vh dotted blue;
+  border: 1px dotted blue;
   display: inline-block;
-  max-width: 250px;
-  padding: 10px;
-  word-break: break-all;
+  max-width: 25%;
+  padding: 10%;
   top: 50%;
 left: 20%;
 
 }
 #icons2{
-position: relative;
-border-radius: 20%;
-background-color: #009fe3;
-opacity: 60%;
-box-shadow:  -9px -9px 18px #1a4273,
-             9px 9px 18px #1a4273;
-max-width: 25%;
-width: 25%;
-top: 10%;
-left: 60%;
-height: 35%;
+  position: relative;
+  border-radius: 20%;
+  background-color: #009fe3;
+  box-shadow:  -9px -9px 18px #1a4273,
+               9px 9px 18px #1a4273;
+  opacity: 60%;
+  border: 1px dotted blue;
+  display: inline-block;
+  max-width: 25%;
+  padding: 10%;
+  top: 50%;
+left: 40%;
 }
-
+#icons:hover, #icons2:hover{
+  cursor: pointer;
+}
+#medientechniktext{
+  position: relative;
+  display: inline-block;
+  max-width: 48%;
+  min-width: 40%;
+  padding: 10%;
+  top: 45%;
+  left: 5%;
+}
+#medientechniktext2{
+  position: relative;
+  display: inline-block;
+  max-width: 48%;
+  min-width: 40%;
+  padding: 10%;
+  top: 45%;
+  left: 15%;
+  }
 #camera{
-  
+  position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
   max-width: 50%;
   height: auto;
 }
-
+#medientechnikicons{
+  position: absolute;
+  margin: auto;
+  top: 30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 30%;
+  height: auto;
+}
 #header{
-  position: relative;
-  display: block;
-  margin-top: 0;
-  top: -55%;
+  position: absolute;
+    margin: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: white;
+}
+#footer{
+  position: absolute;
+  margin: auto;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+text-align: center;
+font-size: 2.5vw;
+color: white;
 }
 .medientechnik{
   display: block;
@@ -142,12 +200,65 @@ height: 35%;
   transition-property: opacity, left, top, height;
   transition-duration: 3s, 5s;
 }
-.medientechniktext{
+.language{
+  display: block;
+  position: fixed;
+  background-image: linear-gradient(45deg, #009fe3, #1a4273);  
+  width: 100%;
+  height: 110%;
+  top: -10%;
+  z-index: 5;
+  left: 0%;
+  visibility: visible;
+  transition-property: opacity, left, top, height;
+  transition-duration: 3s, 5s;
+}
+#languageicons{
+  position: relative;
+  border-radius: 20%;
+  background-color: #009fe3;
+  box-shadow:  -9px -9px 18px #1a4273,
+               9px 9px 18px #1a4273;
+  opacity: 60%;
   border: 1px dotted blue;
-    display: inline-block;
-    max-width: 250px;
-    padding: 10px;
-    word-break: break-all;
+  max-width: 25%;
+  background-size: cover;
+  top: 50%;
+  left: 20%;
+ 
+}
+#languageicons2{
+  position: relative;
+  border-radius: 20%;
+  background-color: #009fe3;
+  box-shadow:  -9px -9px 18px #1a4273,
+               9px 9px 18px #1a4273;
+  opacity: 60%;
+  border: 1px dotted blue;
+  display: inline-block;
+  max-width: 15%;
+  top: 20%;
+  left: 60%;
+}
+
+.fill {
+  position: relative;
+  z-index: 8;
+  max-width: 25%;
+  min-width: 1%;
+  height: 30%;
+  top: 50%;
+  left: 15%;
+  overflow: hidden;
+  background-size:200%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../images/deutschland.png');
+  border-radius: 20%;
+  box-shadow:  -9px -9px 18px #1a4273,
+               9px 9px 18px #1a4273;
+  opacity: 100%;
+  border: 1px dotted blue;
 }
 #splashscreen {
   margin-top: 0%;
