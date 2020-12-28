@@ -27,7 +27,9 @@
       $(".medientechnik").css("visibility", "hidden");
         
     })
-  
+  $(".map").click(function(){
+    window.open("karte.html");
+  })
   
   function load(){
     document.getElementById("splashscreen").style.display='none';
