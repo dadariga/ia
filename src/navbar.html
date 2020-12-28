@@ -15,33 +15,64 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/navbar.css">
     <script src="js/navbar.js"></script>
-
     <title>Only navbar</title>
 </head>
 <body>
-    <navlinks style="position: fixed; left: 5%;top: 2%">
-        <a class="navbar-brand" id="navbar-brand">THD</a>
+  <div id="splashscreen">
+    <img src="img/thd_small.png" id="loading-logo" alt="THD Logo">
+  </div>
+    <navlinks style="position: fixed; left: 5%;top: 2%; z-index: 5;">
+        <!--<img src="images/THD-Logo.png" id="navbar-brand">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-    </navlinks>  
+        </button>-->
+        <img src="images/map.png" class="map">
+    </navlinks>
+  <!-- Burger Menu -->
     <navrechts style="position: fixed; left: 90%; top: 2%; z-index: 5;">
-      <img src="images/icons8-menü.svg" id="dropdown">
+      <img src="images/burgermenu.png" class="dropdown iconedge">
+      <img src="images/schliessen.png" class="close iconedge">
+      
         <div class="droppeddown">
             <div class="menu">
               <img src="images/LabelMenue.svg" class="rechteck">
               <article id="sprache"></article>
-              <div id="icons"><img src="images/house icon white.png" id="house"> </div>
-              <div id="icons2"></div>
+              <div id="icons">
+                <img src="images/cameraicon.png" id="camera"> 
+                <article id="header">Medientechnik</article>
+              </div>
+              <div id="icons2">
+                <img src="images/sprechblase.png"id="camera">
+                <article id="header">Sprachen</article>
+              </div>
             </div>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
     </navrechts>
+
+    <!-- Medientechnik -->
+
+    <div class="medientechnik">
+      <img src="images/LabelMT.svg" class="rechteck">
+      <img src="images/schliessen.png" class="closemedientechnik iconedge">
+      <div class="medientechniktext">
+        <article id="textlefttop">3D-Modell des Davis Divan</article>
+        <img src="images/PixelAuto.png" id="imgleft">
+      </div>
+      <div class="medientechniktext">
+        <article id="textrighttop">Animationsfilm </article>
+        <img src="images/pixelbrille.png" id="imgright">
+        <article id="textrightbottom">Kurs: Grundlagen der Animation<br/>Ein Stop-Motion-Film</article>
+      </div>
+    </div>
+
+    <!-- Ar.js -->
     <a-scene embedded arjs renderer="antialias: true; logarithmicDepthBuffer: true" class="ascene">
         <canvas id="canvasExample"> </canvas>
             <a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-Download.patt'>

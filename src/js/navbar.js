@@ -8,16 +8,32 @@
   $('.dropdown-trigger').dropdown();*/
 
   $(document).ready(function(){
-    
-  var counter;
-  $("#dropdown").click(function(){
-    
-  if(counter == 0){
+  $(".dropdown").click(function(){
     $(".menu").css("visibility", "visible");
-    return counter = 1;}else{
-      $(".menu").css("visibility", "hidden");
-      return counter = 0;
-    }
+      $(".dropdown").css("visibility", "hidden");
+      $(".close").css("visibility", "visible");
   })
+  $(".close").click(function(){
+    $(".menu").css("visibility", "hidden");
+      $(".close").css("visibility", "hidden");
+      $(".dropdown").css("visibility", "visible");
   })
+
+  $("#icons").click(function(){
+      $(".medientechnik").css("visibility", "visible");
+    })
+
+    $(".closemedientechnik").click(function(){
+      $(".medientechnik").css("visibility", "hidden");
         
+    })
+  $(".map").click(function(){
+    window.open("karte.html");
+  })
+  
+  function load(){
+    document.getElementById("splashscreen").style.display='none';
+  }
+  
+  window.onload = window.setTimeout(load, 3000);
+})
