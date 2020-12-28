@@ -37,5 +37,8 @@
   $(".map").click(function(){
     window.open("karte.html", "_self");
   })
-
+  $(".closemap").click(function(){
+    window.open("navbar.html", "_self");
+      
+  })
 })
