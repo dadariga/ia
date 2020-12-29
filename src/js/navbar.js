@@ -46,8 +46,16 @@
   $(".closemap").click(function(){
     $(".closemap").css("visibility", "hidden");
     window.open("navbar.html", "_self");
+    $("#splashscreen").css("visibility","hidden");
       
   })
+  /*$(".arrowtoleft").click(function(){
+    $(".arrowtoright").css("visibility", "hidden");
+    var s = $('#a-marker').html();
+    s = s.replace(/<a-entity id="directionaltarget" shadow="receive: true"position="0 0 0"scale="0.5 0.5 0.5"gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/auto/carSchatten.gltf">,"<a-marker preset='pattern' type='pattern' url='https://raw.githubusercontent.com/fermiumsunset/dump/main/patternBrille.patt'>" ):
+    
+      
+  })*/
 })
 
 /* map*/
