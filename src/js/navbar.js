@@ -56,8 +56,39 @@
     
       
   })*/
+
+  /*Slider */
+
+  AFRAME.registerComponent("videohandler", {
+    init: function(){
+      var marker = this.el;
+      this.vid= document.querySelector("#vid");
+
+      marker.addEventListener("markerFound",
+      function(){
+        this.toggle = true;
+        this.vid.play();
+      }
+      .bind(this));
+    
+
+    marker.addEventListener("markerLost",
+    function(){
+      this.toggle=false;
+      this.vid.pause();
+
+    }.bind(this));
+    }
+    
+  })
+  $(".arrowtoleft").click(function(){
+    document.getElementById("a-marker").innerHTML='<a-entity light="type:directional; castShadow:true;" position="5 10 5" target="#directionaltarget"></a-entity><a-entity id="directionaltarget" shadow="receive: true"position="0 0 0"scale="0.5 0.5 0.5"gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/auto/carSchatten.gltf"></a-entity>'
+})
+$(".arrowtoright").click(function(){
+  document.getElementById("a-marker").innerHTML=' <a-video src="#vid"position="0 0 0"scale="5 5 5"rotation="0 0 0"class="clickable"></a-video>'
 })
 
+  })
 /* map*/
 var mymap = L.map('mapid', {maxBounds: [
   //south west
