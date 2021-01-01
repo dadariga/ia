@@ -133,7 +133,7 @@ margin: 0;
   box-shadow:  -9px -9px 18px #1a4273,
                9px 9px 18px #1a4273;
   opacity: 60%;
-  border: 1px dotted blue;
+  
   display: inline-block;
   max-width: 25%;
   padding: 10%;
@@ -148,7 +148,6 @@ left: 20%;
   box-shadow:  -9px -9px 18px #1a4273,
                9px 9px 18px #1a4273;
   opacity: 60%;
-  border: 1px dotted blue;
   display: inline-block;
   max-width: 25%;
   padding: 10%;
