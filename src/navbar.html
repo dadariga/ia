@@ -32,6 +32,7 @@
     <img src="images/splash-screen_layer-2.svg" id="bg-l2">
 </div>
   
+<!-- Map Icon -->
     <navlinks style="position: fixed; left: 5%;top: 2%; z-index: 5;">
         <!--<img src="images/THD-Logo.png" id="navbar-brand">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,13 +41,13 @@
         <img src="images/map.png" class="map">
     </navlinks>
 
-  <!-- Burger Menu -->
+  <!-- Burger Menu rechts -->
 
     <navrechts style="position: fixed; left: 90%; top: 2%; z-index: 5;">
       <img src="images/burgermenu.png" class="dropdown iconedge">
       <img src="images/schliessen.png" class="close iconedge">
-      <img src="images/arrowtoright.png"class="arrowtoleft">
-      <img src="images/arrowtoright.png"class="arrowtoright">
+      <img src="images/pfeillinks.svg"class="arrowtoleft">
+      <img src="images/pfeilrechts.svg"class="arrowtoright">
       
         <div class="droppeddown">
             <div class="menu">
@@ -65,7 +66,7 @@
        
     </navrechts>
 
-    <!-- Medientechnik -->
+    <!-- Section: Medientechnik -->
 
     <div class="medientechnik">
       <img src="images/LabelMT.svg" class="rechteck">
@@ -82,7 +83,7 @@
       </div>
     </div>
 
-    <!-- Sprachen -->
+    <!-- Section: Sprachen -->
 
     <div class="language">
       <img src="images/LabelSprachen.svg" class="rechteck">
@@ -96,7 +97,6 @@
     <!-- Ar.js -->
 
     <a-scene embedded arjs renderer="antialias: true; logarithmicDepthBuffer: true" class="ascene">
-        <canvas id="canvasExample"> </canvas>
         <a-assets>
           <video id="vid" src="video/DavisDivan.mp4" preload="auto" 
           loop crossorigin webkit-playsinline ></video>
@@ -111,17 +111,15 @@
                 gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/autolowpoly/carlowpoly.gltf">
               </a-entity>
             </a-marker>-->
-           
-            <a-marker preset="pattern" type='pattern' id="a-marker2"videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url='https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt'>
-              <a-video
-              src="#vid"
-                position="0 0 0"
-                scale="5 5 5"
-                rotation="0 0 0"
-                class="clickable"
-                >
-              </a-video>
+            
+            <a-marker preset="pattern" type='pattern' id="a-marker"url='https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-markerAuto.patt'>
+              <a-entity light="type:directional; castShadow:true;" position="5 10 5" target="#directionaltarget">
+              </a-entity>
+              <a-entity id="directionaltarget" shadow="receive: true"position="0 0 0"scale="0.5 0.5 0.5"gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/auto/carSchatten.gltf"></a-entity>'
             </a-marker>
+            
+            
+           
             
             <a-entity camera></a-entity>
     </a-scene>

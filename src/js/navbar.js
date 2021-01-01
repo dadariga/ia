@@ -82,7 +82,8 @@
     
   })
   $(".arrowtoleft").click(function(){
-    
+    $("#a-marker").replaceWith('<a-marker preset="pattern" type="pattern" url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-entity position="0 0 0"scale="0.2 0.2 0.2"gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/autolowpoly/carlowpoly.gltf"></a-entity></a-marker>');
+
     /*var item = document.getElementById("a-marker");
     item.parentNode.removeChild(item);
     var parent = document.getElementsByClassName("ascene");
@@ -99,7 +100,7 @@
     //$(".ascene").('<a-marker preset="pattern" type="pattern" id="a-marker"url="https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-markerAuto.patt"><a-entity light="type:directional; castShadow:true;" position="5 10 5" target="#directionaltarget"></a-entity><a-entity id="directionaltarget" shadow="receive: true"position="0 0 0"scale="0.5 0.5 0.5" gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/autolowpoly/carlowpoly.gltf"></a-entity></a-marker>')
 })
 $(".arrowtoright").click(function(){
-  $("a-marker").replaceWith('<a-marker preset="pattern" type="pattern" videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-video src="#vid"position="0 0 0"scale="5 5 5"rotation="0 0 0"class="clickable"></a-video></a-marker>');
+  $("#a-marker").replaceWith('<a-marker preset="pattern" type="pattern" videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-video src="#vid"position="0 0 0"scale="5 5 5"rotation="0 0 0"class="clickable"></a-video></a-marker>');
   
 })
 
