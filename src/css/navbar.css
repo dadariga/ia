@@ -358,7 +358,9 @@ color: white;
 .map:hover{
   cursor: pointer;
 }
-
+#a-marker2{
+  display: none;
+}
 
 
 /* Splashscreen */
