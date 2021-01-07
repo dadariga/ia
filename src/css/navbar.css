@@ -108,8 +108,10 @@ margin: 0;
   z-index: 5;
   left: 0%;
   visibility: hidden;
-  transition-property: opacity, left, top, height;
-  transition-duration: 3s, 5s;
+  transition-duration: 2s;
+  transition: 0.3s ease-in;
+  visibility: hidden;
+  transform: scaleY(0);
 }
 
 .rechteck{

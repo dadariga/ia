@@ -9,7 +9,7 @@
 
   $(document).ready(function(){
   $(".dropdown").click(function(){
-    $(".menu").css("visibility", "visible");
+    $(".menu").toggleClass("zap")
       $(".dropdown").css("visibility", "hidden");
       $(".close").css("visibility", "visible");
       $(".arrowtoleft").css("visibility", "hidden");
