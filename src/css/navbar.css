@@ -457,3 +457,64 @@ color: white;
   height: 100%;
   top: 10%;
 }
+
+
+
+.zap {
+  transform: scaleY(1);
+  z-index: 12;
+  visibility: visible;
+}
+.zap2 {
+  transform: scaleY(1);
+  z-index: 12;
+  visibility: visible;
+}
+.keyframesforthewin{
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.keyframesforthewin2{
+  animation-name: slideIn2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.keyframesforthewin3{
+  animation-name: slideIn3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes slideIn{
+  from{
+      transform: scale(1,1);
+  }
+  50%{
+      transform: scale(1.15,1.15)
+  }
+  to{
+      transform: scale(1,1);
+  }
+}
+@keyframes slideIn2{
+  from{
+      transform: scale(1,1);
+  }
+  50%{
+      transform: scale(1.05,1.05)
+  }
+  to{
+      transform: scale(1,1);
+  }
+}
+@keyframes slideIn3{
+  from{
+      transform: scale(1,1);
+  }
+  50%{
+      transform: scale(1.35,1.35)
+  }
+  to{
+      transform: scale(1,1);
+  }
+}
