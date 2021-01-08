@@ -146,8 +146,9 @@ if (current_position) {
 mymap.setBearing(-28.5);
 
 
-markerAuto.bindPopup('<p>3D-Auto</p>').addTo(mymap);
-markerBrille.bindPopup('<p>Stopmotion-Film</p>').addTo(mymap);
+markerAuto.bindPopup('<img class="mapicon" src="https://raw.githubusercontent.com/dadariga/ia/master/src/images/KarteIconAuto.png"><nobr><p>3D-Auto</p></nobr>').addTo(mymap);
+markerAuto.openPopup();
+markerBrille.bindPopup('<img class="mapicon" src="https://raw.githubusercontent.com/dadariga/ia/master/src/images/KarteIconBrille.png"><nobr><p>Stopmotion-Film</p></nobr>').addTo(mymap);
 
 
 $(".closemap").click(function(){
