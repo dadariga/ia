@@ -361,6 +361,18 @@ color: white;
   cursor: pointer;
 }
 
+#infobutton {
+  /*display: block;*/
+  position: fixed;
+  width: 5%;
+  top: 88%;
+  right: 3%;
+  z-index: 8;
+  display: none;
+}
+#infobutton:hover{
+  cursor: pointer;
+}
 
 
 /* Splashscreen */
