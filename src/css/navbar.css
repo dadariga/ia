@@ -527,5 +527,11 @@ color: white;
   display: none;
 }
 #arjsDebugUIContainer{
-  display: none;
+  
+}
+#avideo{
+  display: contents;
+}
+#arjs-video{
+  z-index: 20;
 }

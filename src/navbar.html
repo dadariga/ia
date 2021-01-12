@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/load.js"></script>
     <script src="js/navbar.js"></script>
     <title>Only navbar</title>
 </head>
@@ -31,7 +32,9 @@
     <img src="images/splash-screen_layer-1.svg" id="bg-l1">
     <img src="images/splash-screen_layer-2.svg" id="bg-l2">
 </div>
-<!-- Map Icon -->
+
+      <!-- Map Icon -->
+
     <navlinks style="position: fixed; left: 5%;top: 2%; z-index: 5;">
         <!--<img src="images/THD-Logo.png" id="navbar-brand">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,13 +43,13 @@
         <img src="images/map.png" class="map">
     </navlinks>
 
-  <!-- Burger Menu rechts -->
+      <!-- Burger Menu rechts -->
 
     <navrechts style="position: fixed; left: 90%; top: 2%; z-index: 5;">
       <img src="images/burgermenu.png" class="dropdown iconedge">
       <img src="images/schliessen.png" class="close iconedge">
-      <img src="images/pfeillinks.svg"class="arrowtoleft">
-      <img src="images/pfeilrechts.svg"class="arrowtoright">
+      <img src="images/pfeillinks.svg"class="arrowtoleft" onclick="changemodel();">
+      <img src="images/pfeilrechts.svg"class="arrowtoright" onclick="changemodeltolowpoly();">
       
         <div class="droppeddown">
             <div class="menu">
@@ -65,7 +68,7 @@
        
     </navrechts>
 
-    <!-- Section: Medientechnik -->
+      <!-- Section: Medientechnik -->
 
     <div class="medientechnik">
       <img src="images/LabelMT.svg" class="rechteck">
@@ -95,14 +98,25 @@
     
     <!-- Ar.js -->
 
-    <a-scene embedded arjs renderer="antialias: true; logarithmicDepthBuffer: true" id="ascene">
-        <a-assets>
-          <video id="vid" src="video/DavisDivan.mp4" preload="auto" 
-          loop crossorigin webkit-playsinline playsinline autoplay muted></video>
-        </a-assets>
-            <!--<a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-Download.patt'>
-              <a-entity obj-model="obj: #r2d2-obj; mtl: #r2d2-mtl" position="0 0 0" scale="0.005 0.005 0.005"></a-entity> rotation="-90 0 -90"
-            </a-marker>-->
+    <a-scene embedded arjs renderer="antialias: false; logarithmicDepthBuffer: true" id="ascene">
+      <a-assets>
+        <video id="vid" src="../Videos/DavisDivan.mp4" preload="auto" 
+        loop crossorigin webkit-playsinline autoplay muted playsinline></video>
+      </a-assets>
+      <a-assets>
+        <video id="vid" src="../Videos/DavisDivan.mp4" preload="auto" 
+        loop crossorigin webkit-playsinline autoplay muted playsinline></video>
+      </a-assets>
+          <a-marker preset="pattern" type='pattern' videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url='https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt'>
+            <a-video
+            src="#vid"
+              position="0 0 0"
+              scale="5 5 5"
+              rotation="0 0 0"
+              class="clickable"
+              >
+            </a-video>
+          </a-marker>
             <!--<a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt'>
               <a-entity
                 position="0 0 0"

@@ -84,7 +84,7 @@
     }
     
   })
-  $(".arrowtoleft").click(function(){
+  /*$(".arrowtoleft").click(function(){
     $("body").remove("a-scene");
     $("body").add('<a-scene embedded arjs renderer="antialias: false; logarithmicDepthBuffer: true" class="ascene"><canvas id="canvasExample">  </canvas><a-assets><video id="vid" src="../Videos/DavisDivan.mp4" preload="auto" loop crossorigin webkit-playsinline autoplay muted playsinline></video></a-assets><a-marker preset="pattern" type="pattern" url="https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-Download.patt"><a-entity obj-model="obj: #r2d2-obj; mtl: #r2d2-mtl" position="0 0 0" scale="0.005 0.005 0.005"></a-entity> <!--rotation="-90 0 -90"--></a-marker><a-marker preset="pattern" type="pattern" videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-video src="#vid"position="0 0 0"scale="5 5 5"rotation="0 0 0"class="clickable"  ></a-video></a-marker><a-marker preset="pattern" type="pattern" url="https://raw.githubusercontent.com/fermiumsunset/dump/main/patternBrille.patt"><a-entity obj-model="obj: #divan-obj; mtl: #divan-mtl" position="0 0 -3" scale="0.0003 0.0003 0.0003"></a-entity></a-marker><a-entity camera></a-entity></a-scene>');
 
@@ -102,12 +102,12 @@
 
     //$(".ascene").('<a-marker preset="pattern" type="pattern" id="a-marker"url="https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-markerAuto.patt"><a-entity light="type:directional; castShadow:true;" position="5 10 5" target="#directionaltarget"></a-entity><a-entity id="directionaltarget" shadow="receive: true"position="0 0 0"scale="0.5 0.5 0.5" gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/autolowpoly/carlowpoly.gltf"></a-entity></a-marker>')
 })
-$(".arrowtoright").click(function(){
+/*$(".arrowtoright").click(function(){
   $("#a-marker").replaceWith('<a-marker preset="pattern" type="pattern" videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-video src="#vid"position="0 0 0"scale="10 10 10"rotation="0 0 0"class="clickable"></a-video></a-marker>');
   
 })
 
-  })
+  })*/
   
 /* map*/
 
@@ -159,15 +159,11 @@ $(".closemap").css("visibility", "hidden");
 window.open("navbar.html", "_self");
 })
 
-
-
-
-function load(){
-  document.getElementById("splashscreen").style.display='none';
+function changemodel(){
+  document.getElementById("ascene").innerHTML="";
+  document.getElementById("ascene").innerHTML=' <a-assets><video id="vid" src="../Videos/DavisDivan.mp4" preload="auto" loop crossorigin muted webkit-playsinline autoplay playsinline></video></a-assets><a-marker preset="pattern" type="pattern" videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-video src="#vid"id="avideonew"position="0 0 0"scale="5 5 5"rotation="0 0 0"class="clickable"></a-video></a-marker>';
 }
-
-window.onload = window.setTimeout(load, 4000);
-
-if(screen.availHeight > screen.availWidth){
-  alert("Please use Landscape-Mode!");
+function changemodeltolowpoly(){
+  document.getElementById("ascene").innerHTML="";
+  document.getElementById("ascene").innerHTML=' <a-marker preset="pattern" type="pattern" url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-entity position="0 0 0"scale="0.2 0.2 0.2"gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/autolowpoly/carlowpoly.gltf"></a-entity></a-marker>';
 }
