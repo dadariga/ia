@@ -47,6 +47,7 @@
   })
   $(".closemap").click(function(){
     $(".closemap").css("visibility", "hidden");
+    
     window.open("navbar.html", "_self");
     $("#splashscreen").css("visibility","hidden");
       
