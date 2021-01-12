@@ -157,3 +157,16 @@ $(".closemap").click(function(){
 $(".closemap").css("visibility", "hidden");
 window.open("navbar.html", "_self");
 })
+
+
+
+
+function load(){
+  document.getElementById("splashscreen").style.display='none';
+}
+
+window.onload = window.setTimeout(load, 4000);
+
+if(screen.availHeight > screen.availWidth){
+  alert("Please use Landscape-Mode!");
+}

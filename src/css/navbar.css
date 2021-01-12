@@ -521,3 +521,11 @@ color: white;
       transform: scale(1,1);
   }
 }
+
+
+.a-enter-vr-button{
+  display: none;
+}
+#arjsDebugUIContainer{
+  display: none;
+}
