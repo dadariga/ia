@@ -62,6 +62,7 @@ margin: 0;
 }
 .close{
   visibility: hidden;
+  z-index: 15;
 }
 .iconedge:hover{
   cursor: pointer;

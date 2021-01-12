@@ -9,7 +9,8 @@
 
   $(document).ready(function(){
   $(".dropdown").click(function(){
-    $(".menu").toggleClass("zap")
+    $(".menu").toggleClass("zap");
+    $(".menu").css("visibility", "visible");
       $(".dropdown").css("visibility", "hidden");
       $(".close").css("visibility", "visible");
       $(".arrowtoleft").css("visibility", "hidden");
@@ -17,6 +18,7 @@
   })
   $(".close").click(function(){
     $(".menu").css("visibility", "hidden");
+    $(".menu").removeClass("zap");
       $(".close").css("visibility", "hidden");
       $(".dropdown").css("visibility", "visible");
       $(".arrowtoleft").css("visibility", "visible");
