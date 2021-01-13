@@ -52,6 +52,16 @@
     $("#splashscreen").css("visibility","hidden");
       
   })
+  var textshown= true;
+  $("#infobutton").click(function(){
+    if (textshown){
+		$(".projektfeld").css("display", "none");
+		textshown= false;
+	} else {
+		$(".projektfeld").css("display", "block");
+		textshown=true;
+	}
+  })
   /*$(".arrowtoleft").click(function(){
     $(".arrowtoright").css("visibility", "hidden");
     var s = $('#a-marker').html();
@@ -89,9 +99,13 @@
     init: function () {
       this.el.sceneEl.addEventListener('markerFound', () => {
         $("#infobutton").css("display", "block");
+		if (textshown){
+			$(".projektfeld").css("display", "block");
+		}
       })
 	  this.el.sceneEl.addEventListener('markerLost', () => {
-        $("#infobutton").css("display", "none");
+		$("#infobutton").css("display", "none");
+		$(".projektfeld").css("display", "none");
       })
     }
   });
