@@ -1,6 +1,115 @@
+  #container 
+  {
+    position: fixed;;
+    width:100vw;
+    height:100vh;
+    margin: 0 auto;
+	float:left;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #009fe3, #1a4273);  
+  }
+
+
+  #splashscreen {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+  }
+
+  #loading-logo{
+    position:relative;
+    margin-left: 35%;
+    margin-right: auto;
+    margin-top: 15%;
+    width: 30%;
+  }
+
+  .intro-text {
+    position:relative;
+      color: white;
+      font-family: saira;
+    }
+    
+    
+  #splash-text {
+    position:relative;
+    margin-top: 2%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: auto;
+    text-align: center;
+    font-size: 5vw;
+  }
+
+
+  #bg-l1{
+    position:fixed;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    animation: pulse1 4s infinite;
+  }
+
+  #bg-l2{
+    position:fixed;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    animation: pulse2 4s infinite;
+  }
+
+  #tutorial {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+
+  #carousel-text-1 {
+    position:relative;
+    margin-top: 10%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: auto;
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  #karte {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    width: 25%;
+  }
+  
+  #karte-text {
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    width: 55%;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+
 #myCarousel {
   height: 100%;
   width: 100%;
+}
+
+#markers {
+  position:relative;
+  margin-top: 10%;
+  margin-left: 25%;
+  width: 75%;
 }
 
 #brille {
@@ -10,94 +119,29 @@
   margin-left: 7.5%;
 }
 
-#markers {
-  position: relative;
-  margin-top: 10%;
-  margin-left: 25%;
-  width: 75%;
-}
-
 #auto {
   display: inline-block;
   height: 25%;
   width: 25%;
 }
 
-#splashscreen {
-    position: fixed;
-    background-image: linear-gradient(45deg, #009fe3, #1a4273);  
-    width: 100vw;
-    height: 100vh;
-    z-index: 6;
-  }
-
-  #splash-text {
-    position: relative;
-    margin-top: 10%;
-    width: 40%;
-    text-align: center;
-    font-size: 2em;
-  }
-
-  #tutorial {
-    position: absolute;
-    background-image: linear-gradient(45deg, #009fe3, #1a4273);  
-    width: 100vw;
-    height: 100vh;
-    z-index: 5;
-  }
-
-#karte {
-  position: relative;
+#marker-text {
+  position:relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25vh;
-  width: 25vw;
-}
-
-#karte-text {
-  position: relative;
   margin-top: 4%;
   width: 55%;
   text-align: center;
-  font-size: 1em;
+  font-size: 2vw;
 }
 
-.intro-text {
-  position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-family: saira;
-  }
-  
-  #loading-logo{
-    position: relative;
-    margin-left: 35%;
-    margin-right: auto;
-    margin-top: 25vh;
-    width: 30vw;
-  }
 
-  #bg-l1{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -30%;
-    width: 100%;
-    height: 100%;
-    animation: pulse1 4s infinite;
-  }
 
-  #bg-l2{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -50%;
-    width: 100%;
-    height: 100%;
-    animation: pulse2 4s infinite;
-  }
+
+
+
+
+
 
 @keyframes pulse1 {
       0% {
