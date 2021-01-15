@@ -52,6 +52,16 @@
     $("#splashscreen").css("visibility","hidden");
       
   })
+  var textshown= true;
+  $("#infobutton").click(function(){
+    if (textshown){
+		$(".projektfeld").css("display", "none");
+		textshown= false;
+	} else {
+		$(".projektfeld").css("display", "block");
+		textshown=true;
+	}
+  })
   /*$(".arrowtoleft").click(function(){
     $(".arrowtoright").css("visibility", "hidden");
     var s = $('#a-marker').html();
@@ -84,6 +94,22 @@
     }
     
   })
+      
+  AFRAME.registerComponent("markerhandler", {
+    init: function () {
+      this.el.sceneEl.addEventListener('markerFound', () => {
+        $("#infobutton").css("display", "block");
+		if (textshown){
+			$(".projektfeld").css("display", "block");
+		}
+      })
+	  this.el.sceneEl.addEventListener('markerLost', () => {
+		$("#infobutton").css("display", "none");
+		$(".projektfeld").css("display", "none");
+      })
+    }
+  });
+  
   /*$(".arrowtoleft").click(function(){
     $("body").remove("a-scene");
     $("body").add('<a-scene embedded arjs renderer="antialias: false; logarithmicDepthBuffer: true" class="ascene"><canvas id="canvasExample">  </canvas><a-assets><video id="vid" src="../Videos/DavisDivan.mp4" preload="auto" loop crossorigin webkit-playsinline autoplay muted playsinline></video></a-assets><a-marker preset="pattern" type="pattern" url="https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-Download.patt"><a-entity obj-model="obj: #r2d2-obj; mtl: #r2d2-mtl" position="0 0 0" scale="0.005 0.005 0.005"></a-entity> <!--rotation="-90 0 -90"--></a-marker><a-marker preset="pattern" type="pattern" videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-video src="#vid"position="0 0 0"scale="5 5 5"rotation="0 0 0"class="clickable"  ></a-video></a-marker><a-marker preset="pattern" type="pattern" url="https://raw.githubusercontent.com/fermiumsunset/dump/main/patternBrille.patt"><a-entity obj-model="obj: #divan-obj; mtl: #divan-mtl" position="0 0 -3" scale="0.0003 0.0003 0.0003"></a-entity></a-marker><a-entity camera></a-entity></a-scene>');

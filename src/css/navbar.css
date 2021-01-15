@@ -361,6 +361,61 @@ color: white;
   cursor: pointer;
 }
 
+#infobutton {
+  /*display: block;*/
+  position: fixed;
+  width: 5%;
+  top: 88%;
+  right: 3%;
+  z-index: 8;
+  display: none;
+}
+#infobutton:hover{
+  cursor: pointer;
+}
+
+/* Textbloecke zu den Projekten*/
+.projektfeld{
+	display: none;
+}
+.imgtextl {
+  display: block;
+  position: fixed;
+  width: 37%;
+  top: -1.5%;
+  left: 0%;
+  z-index: 4;
+}
+
+.projektueberschrift{
+  position: fixed;
+  width: 25%;
+  top: 2.3%;
+  left: 3%;
+  z-index: 5;
+  font-size: 1.8vw;
+  color: black;
+}
+
+.imgtextr {
+  display: block;
+  position: fixed;
+  width: 55%;
+  bottom: -1%;
+  right: 0%;
+  z-index: 4;
+}
+
+.projektbeschreibung{
+  position: fixed;
+  width: 45%;
+  /*top: 74%;*/
+  bottom: 6%;
+  left: 50%;
+  z-index: 5;
+  font-size: 1.8vw;
+  color: black;
+}
 
 
 /* Splashscreen */
