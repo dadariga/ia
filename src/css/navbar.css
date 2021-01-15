@@ -42,7 +42,7 @@ margin: 0;
   transition: margin-right 4s ease-in-out 1s;
 }
 .arrowtoleft{
-  display: block;
+  display: none;
   position: fixed;
   width: 3%;
   top: 48.5%;
@@ -52,7 +52,7 @@ margin: 0;
   transition: margin-right 4s ease-in-out 1s;
 }
 .arrowtoright{
-  display: block;
+  display: none;
   position: fixed;
   width: 3%;
   top: 48.5%;

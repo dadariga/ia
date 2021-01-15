@@ -14,14 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/navbar.css">
     <script src="js/load.js"></script>
     <script src="js/navbar.js"></script>
-    <title>Only navbar</title>
+    <title>World of Arts</title>
 </head>
 <body>
   
@@ -69,8 +68,8 @@
     <navrechts style="position: fixed; left: 90%; top: 2%; z-index: 5;">
       <img src="images/burgermenu.png" class="dropdown iconedge">
       <img src="images/schliessen.png" class="close iconedge">
-      <img src="images/pfeillinks.svg"class="arrowtoleft" onclick="changemodel();">
-      <img src="images/pfeilrechts.svg"class="arrowtoright" onclick="changemodeltolowpoly();">
+      <img src="images/pfeillinks.svg"class="arrowtoleft">
+      <img src="images/pfeilrechts.svg"class="arrowtoright">
       
         <div class="droppeddown">
             <div class="menu">
@@ -128,7 +127,7 @@
         <video id="vid" src="../Videos/DavisDivan.mp4" preload="auto" 
         loop crossorigin webkit-playsinline autoplay muted playsinline></video>
       </a-assets>
-          <a-marker preset="pattern" type='pattern' videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url='https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt'>
+          <!--<a-marker preset="pattern" type='pattern' videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url='https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt'>
             <a-video
             src="#vid"
               position="0 0 0"
@@ -137,7 +136,7 @@
               class="clickable"
               >
             </a-video>
-          </a-marker>
+          </a-marker>-->
             <!--<a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt'>
               <a-entity
                 position="0 0 0"
@@ -147,9 +146,9 @@
             </a-marker>-->
             
             <a-marker markerhandler preset="pattern" type='pattern' id="a-marker"url='https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-markerAuto.patt'>
-              <a-entity light="type:directional; castShadow:true;" position="5 10 5" target="#directionaltarget">
+              <a-entity light="type:directional; castShadow:true;" position="5 10 5"target="#directionaltarget">
               </a-entity>
-              <a-entity id="directionaltarget" shadow="receive: true"position="0 0 0"scale="0.5 0.5 0.5"gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/auto/carSchatten.gltf"></a-entity>'
+              <a-entity id="directionaltarget" shadow="receive: true"position="0 0 0"scale="0.5 0.5 0.5" rotation="-60 0 0" gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/auto/carSchatten.gltf"></a-entity>'
             </a-marker>
             <a-entity camera></a-entity>
     </a-scene>
