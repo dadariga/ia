@@ -185,11 +185,6 @@ $(".closemap").css("visibility", "hidden");
 window.open("navbar.html", "_self");
 })
 
-function changemodel(){
-  document.getElementById("ascene").innerHTML="";
-  document.getElementById("ascene").innerHTML=' <a-assets><video id="vid" src="../Videos/DavisDivan.mp4" preload="auto" loop crossorigin muted webkit-playsinline autoplay playsinline></video></a-assets><a-marker preset="pattern" type="pattern" videohandler smooth="true"smoothcount="10"smoothTolerance="0.01"smoothThreshold="5" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false,rayOrigin: mouse;"   url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-video src="#vid"id="avideonew"position="0 0 0"scale="5 5 5"rotation="0 0 0"class="clickable"></a-video></a-marker>';
-}
-function changemodeltolowpoly(){
-  document.getElementById("ascene").innerHTML="";
-  document.getElementById("ascene").innerHTML=' <a-marker preset="pattern" type="pattern" url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"><a-entity position="0 0 0"scale="0.2 0.2 0.2"gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/autolowpoly/carlowpoly.gltf"></a-entity></a-marker>';
-}
+$(".arrowtoleft").click(function(){
+  window.open("markerwithvideo.html")
+})
