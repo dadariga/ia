@@ -60,7 +60,11 @@
 	} else {
 		$(".projektfeld").css("display", "block");
 		textshown=true;
-	}
+  }
+  $(".arrowtoleft").click(function(){
+    $(".arrowtoright").css("visibility","hidden")
+    
+  })
   })
   /*$(".arrowtoleft").click(function(){
     $(".arrowtoright").css("visibility", "hidden");
@@ -79,9 +83,14 @@
 
       marker.addEventListener("markerFound",
       function(){
+        $(".arrowtoright").css("visibility","visible");
+        $(".arrowtoright").click(function(){
+          window.open("navbar.html","_self");
+        })
         this.toggle = true;
         this.vid.play();
       }
+     
       .bind(this));
     
 
@@ -89,6 +98,7 @@
     function(){
       this.toggle=false;
       this.vid.pause();
+      $(".arrowtoright").css("visibility","hidden");
 
     }.bind(this));
     }
@@ -99,8 +109,10 @@
     init: function () {
       this.el.sceneEl.addEventListener('markerFound', () => {
         $("#infobutton").css("display", "block");
-        $(".arrowtoleft").css("display","block");
-        $(".arrowtoright").css("display","block");
+        $(".arrowtoleft").css("visibility","visible");
+        $(".arrowtoleft").click(function(){
+          window.open("markerwithvideo.html","_self");
+        })
 		if (textshown){
 			$(".projektfeld").css("display", "block");
 		}
@@ -108,8 +120,7 @@
 	  this.el.sceneEl.addEventListener('markerLost', () => {
 		$("#infobutton").css("display", "none");
     $(".projektfeld").css("display", "none");
-    $(".arrowtoleft").css("display","none");
-        $(".arrowtoright").css("display","none");
+    $(".arrowtoleft").css("visibility","hidden");
       })
     }
   });
@@ -190,5 +201,6 @@ window.open("navbar.html", "_self");
 })
 
 $(".arrowtoleft").click(function(){
-  window.open("markerwithvideo.html","_self");
+  $(".arrowtoright").css("visibility","hidden")
+  
 })
