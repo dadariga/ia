@@ -200,7 +200,3 @@ $(".closemap").css("visibility", "hidden");
 window.open("navbar.html", "_self");
 })
 
-$(".arrowtoleft").click(function(){
-  $(".arrowtoright").css("visibility","hidden")
-  
-})

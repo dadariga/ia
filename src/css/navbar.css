@@ -225,7 +225,7 @@ margin: 0;
   width: 3%;
   top: 48.5%;
   left: 5%;
-  
+  visibility: hidden;
   z-index: 8;
   transition: margin-right 4s ease-in-out 1s;
 }
@@ -235,13 +235,9 @@ margin: 0;
   width: 3%;
   top: 48.5%;
   visibility: hidden;
-<<<<<<< HEAD
+
   z-index: 30;
 
-=======
-  z-index: 8;
-  transition: margin-right 4s ease-in-out 1s;
->>>>>>> parent of a3e7ab5... 14.29
 }
 .close{
   visibility: hidden;
@@ -544,13 +540,14 @@ color: white;
   cursor: pointer;
 }
 
+
+
 #infobutton {
-  /*display: block;*/
   position: fixed;
   width: 5%;
   top: 88%;
   right: 3%;
-  z-index: 8;
+  z-index: 40;
   display: none;
 }
 #infobutton:hover{
