@@ -1,181 +1,3 @@
-/*Intro*/
-#intro-block 
-{
-  visibility: visible;
-  position: fixed;
-  width:100vw;
-  height:100vh;
-  margin: 0 auto;
-float:left;
-box-sizing: border-box;
-overflow: hidden;
-background-image: linear-gradient(45deg, #009fe3, #1a4273);  
-z-index: 7;
-}
-
-
-#splashscreen {
-  position:relative;
-  width: 100%;
-  height: 100%;
-  z-index: 6;
-}
-
-#loading-logo{
-  position:relative;
-  margin-left: 35%;
-  margin-right: auto;
-  margin-top: 15%;
-  width: 30%;
-}
-
-.intro-text {
-  position:relative;
-    color: white;
-    font-family: saira;
-  }
-  
-  
-#splash-text {
-  position:relative;
-  margin-top: 2%;
-  width: 40%;
-  margin-left: 30%;
-  margin-right: auto;
-  text-align: center;
-  font-size: 5vw;
-}
-
-
-#bg-l1{
-  position:fixed;
-  margin-top: 0%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100%;
-  animation: pulse1 4s infinite;
-}
-
-#bg-l2{
-  position:fixed;
-  margin-top: 0%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100%;
-  animation: pulse2 4s infinite;
-}
-
-#tutorial {
-  position:relative;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-}
-
-#carousel-text-1 {
-  position:relative;
-  margin-top: 10%;
-  width: 40%;
-  margin-left: 30%;
-  margin-right: auto;
-  text-align: center;
-  font-size: 4vw;
-}
-
-#karte {
-  position:relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15%;
-  width: 25%;
-}
-
-#karte-text {
-  position:relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4%;
-  width: 55%;
-  text-align: center;
-  font-size: 2vw;
-}
-
-
-#myCarousel {
-height: 100%;
-width: 100%;
-}
-
-#markers {
-position:relative;
-margin-top: 10%;
-margin-left: 25%;
-width: 75%;
-}
-
-#brille {
-display: inline-block;
-height: 25%;
-width: 25%;
-margin-left: 7.5%;
-}
-
-#auto {
-display: inline-block;
-height: 25%;
-width: 25%;
-}
-
-#marker-text {
-position:relative;
-margin-left: auto;
-margin-right: auto;
-margin-top: 4%;
-width: 55%;
-text-align: center;
-font-size: 2vw;
-}
-
-#close-intro
-{
-  position:relative;
-margin-left: 80%;
-margin-right: auto;
-margin-top: 2%;
-width: 10%;
-padding: 1% 0; 
-font-size: 80%;
-text-align: center;
-}
-
-@keyframes pulse1 {
-    0% {
-      opacity: 10%;
-    }
-    50% {
-      opacity: 100%;
-    }
-    100% {
-      opacity: 10%;
-  }
-}
-
-  
-@keyframes pulse2 {
-0% {
-  opacity: 100%;
-}
-50% {
-  opacity: 10%;
-}
-100% {
-  opacity: 100%;
-}
-}  
-
-
 /*Navbar*/
 .collapse{
     display: block;
@@ -185,7 +7,9 @@ text-align: center;
 }
 
 /* Rest */
-
+navrechts{
+  position: fixed; left: 90%; top: 2%;
+}
 html, body{
 margin: 0;
   padding: 0;
@@ -225,8 +49,13 @@ margin: 0;
   width: 3%;
   top: 48.5%;
   left: 5%;
+<<<<<<< HEAD
   visibility: hidden;
   z-index: 8;
+=======
+  z-index: 30;
+  visibility: hidden;
+>>>>>>> parent of 63e7201... Merge branch 'master' of https://github.com/dadariga/ia
   transition: margin-right 4s ease-in-out 1s;
 }
 .arrowtoright{
@@ -237,7 +66,11 @@ margin: 0;
   visibility: hidden;
 
   z-index: 30;
+<<<<<<< HEAD
 
+=======
+  transition: margin-right 4s ease-in-out 1s;
+>>>>>>> parent of 63e7201... Merge branch 'master' of https://github.com/dadariga/ia
 }
 .close{
   visibility: hidden;
@@ -596,6 +429,80 @@ color: white;
   font-size: 1.8vw;
   color: black;
 }
+
+
+/* Splashscreen */
+#splashscreen {
+  position: fixed;
+  background-image: linear-gradient(45deg, #009fe3, #1a4273);  
+  width: 100vw;
+  height: 100vh;
+  z-index: 6;
+  visibility: visible;
+}
+
+#splash-text {
+  display: relative;
+  margin-left: 37.5%;
+  margin-right: auto;
+  width: 30vw;
+  color: white;
+  font-size: 4.5vw;
+  font-family: saira;
+}
+
+#loading-logo{
+  display: relative;
+  margin-left: 35%;
+  margin-right: auto;
+  margin-top: 30vh;
+  width: 30vw;
+}
+
+#bg-l1{
+  display: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30%;
+  width: 100%;
+  height: 100%;
+  animation: pulse1 4s infinite;
+}
+
+#bg-l2{
+  display: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50%;
+  width: 100%;
+  height: 100%;
+  animation: pulse2 4s infinite;
+}
+
+@keyframes pulse1 {
+    0% {
+      opacity: 10%;
+    }
+    50% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 10%;
+  }
+}
+
+  
+@keyframes pulse2 {
+0% {
+  opacity: 100%;
+}
+50% {
+  opacity: 10%;
+}
+100% {
+  opacity: 100%;
+}
+}  
 
 
 /*Video*/

@@ -61,10 +61,7 @@
 		$(".projektfeld").css("display", "block");
 		textshown=true;
   }
-  $(".arrowtoleft").click(function(){
-    $(".arrowtoright").css("visibility","hidden")
-    
-  })
+ 
   })
   /*$(".arrowtoleft").click(function(){
     $(".arrowtoright").css("visibility", "hidden");
