@@ -99,17 +99,13 @@
     init: function () {
       this.el.sceneEl.addEventListener('markerFound', () => {
         $("#infobutton").css("display", "block");
-        $(".arrowtoleft").css("display","block");
-        $(".arrowtoright").css("display","block");
 		if (textshown){
 			$(".projektfeld").css("display", "block");
 		}
       })
 	  this.el.sceneEl.addEventListener('markerLost', () => {
 		$("#infobutton").css("display", "none");
-    $(".projektfeld").css("display", "none");
-    $(".arrowtoleft").css("display","none");
-        $(".arrowtoright").css("display","none");
+		$(".projektfeld").css("display", "none");
       })
     }
   });
@@ -190,5 +186,6 @@ window.open("navbar.html", "_self");
 })
 
 $(".arrowtoleft").click(function(){
-  window.open("markerwithvideo.html","_self");
+  window.open("markerwithvideo.html")
 })
+
