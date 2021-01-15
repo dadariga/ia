@@ -13,14 +13,16 @@
     $(".menu").css("visibility", "visible");
       $(".dropdown").css("visibility", "hidden");
       $(".close").css("visibility", "visible");
-
+      $(".arrowtoleft").css("visibility", "hidden");
+      $(".arrowtoright").css("visibility", "hidden");
   })
   $(".close").click(function(){
     $(".menu").css("visibility", "hidden");
     $(".menu").removeClass("zap");
       $(".close").css("visibility", "hidden");
       $(".dropdown").css("visibility", "visible");
-
+      $(".arrowtoleft").css("visibility", "visible");
+      $(".arrowtoright").css("visibility", "visible");
   })
 
   $("#icons").click(function(){

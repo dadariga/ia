@@ -215,54 +215,7 @@
       renderer="antialias: false; logarithmicDepthBuffer: true"
       id="ascene"
     >
-      <a-assets>
-        <video
-          id="vid"
-          src="../Videos/DavisDivan.mp4"
-          preload="auto"
-          loop
-          crossorigin
-          webkit-playsinline
-          autoplay
-          muted
-          playsinline
-        ></video>
-      </a-assets>
-      <a-assets>
-        <video
-          id="vid"
-          src="../Videos/DavisDivan.mp4"
-          preload="auto"
-          loop
-          crossorigin
-          webkit-playsinline
-          autoplay
-          muted
-          playsinline
-        ></video>
-      </a-assets>
-      <a-marker
-        preset="pattern"
-        type="pattern"
-        videohandler
-        smooth="true"
-        smoothcount="10"
-        smoothTolerance="0.01"
-        smoothThreshold="5"
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false,rayOrigin: mouse;"
-        url="https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt"
-      >
-        <a-video
-          src="#vid"
-          position="0 0 0"
-          scale="5 5 5"
-          rotation="0 0 0"
-          class="clickable"
-        >
-        </a-video>
-      </a-marker>
+     
       <!--<a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt'>
               <a-entity
                 position="0 0 0"
