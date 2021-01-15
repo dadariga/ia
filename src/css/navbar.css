@@ -185,7 +185,9 @@ text-align: center;
 }
 
 /* Rest */
-
+navrechts{
+  position: fixed; left: 90%; top: 2%;
+}
 html, body{
 margin: 0;
   padding: 0;
@@ -225,8 +227,8 @@ margin: 0;
   width: 3%;
   top: 48.5%;
   left: 5%;
-  
-  z-index: 8;
+  z-index: 30;
+  visibility: hidden;
   transition: margin-right 4s ease-in-out 1s;
 }
 .arrowtoright{
@@ -234,7 +236,7 @@ margin: 0;
   position: fixed;
   width: 3%;
   top: 48.5%;
-  visibility: visible;
+  visibility: hidden;
   z-index: 8;
   transition: margin-right 4s ease-in-out 1s;
 }
