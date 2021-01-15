@@ -59,7 +59,10 @@
 		$(".projektfeld").css("display", "block");
 		textshown=true;
   }
- 
+  $(".arrowtoleft").click(function(){
+    $(".arrowtoright").css("visibility","hidden")
+    
+  })
   })
   /*$(".arrowtoleft").click(function(){
     $(".arrowtoright").css("visibility", "hidden");
@@ -195,3 +198,7 @@ $(".closemap").css("visibility", "hidden");
 window.open("navbar.html", "_self");
 })
 
+$(".arrowtoleft").click(function(){
+  $(".arrowtoright").css("visibility","hidden")
+  
+})
