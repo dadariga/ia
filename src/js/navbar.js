@@ -189,6 +189,3 @@ $(".arrowtoleft").click(function(){
   window.open("markerwithvideo.html")
 })
 
-$("#close-intro").click(function(){
-  $("#intro-block").css("visibility", "hidden");
-})
