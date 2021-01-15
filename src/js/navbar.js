@@ -13,16 +13,14 @@
     $(".menu").css("visibility", "visible");
       $(".dropdown").css("visibility", "hidden");
       $(".close").css("visibility", "visible");
-      $(".arrowtoleft").css("visibility", "hidden");
-      $(".arrowtoright").css("visibility", "hidden");
+
   })
   $(".close").click(function(){
     $(".menu").css("visibility", "hidden");
     $(".menu").removeClass("zap");
       $(".close").css("visibility", "hidden");
       $(".dropdown").css("visibility", "visible");
-      $(".arrowtoleft").css("visibility", "visible");
-      $(".arrowtoright").css("visibility", "visible");
+
   })
 
   $("#icons").click(function(){
@@ -61,10 +59,7 @@
 		$(".projektfeld").css("display", "block");
 		textshown=true;
   }
-  $(".arrowtoleft").click(function(){
-    $(".arrowtoright").css("visibility","hidden")
-    
-  })
+ 
   })
   /*$(".arrowtoleft").click(function(){
     $(".arrowtoright").css("visibility", "hidden");
@@ -200,7 +195,3 @@ $(".closemap").css("visibility", "hidden");
 window.open("navbar.html", "_self");
 })
 
-$(".arrowtoleft").click(function(){
-  $(".arrowtoright").css("visibility","hidden")
-  
-})
