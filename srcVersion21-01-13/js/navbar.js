@@ -7,6 +7,7 @@
 
   $('.dropdown-trigger').dropdown();*/
 
+  
   $(document).ready(function(){
   $(".dropdown").click(function(){
     $(".menu").toggleClass("zap");
