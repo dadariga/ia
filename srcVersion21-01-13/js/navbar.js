@@ -79,6 +79,10 @@
       function(){
         this.toggle = true;
         this.vid.play();
+        $(".arrowtoleft").css("visibility", "visible");
+        $(".arrowtoleft").click(function(){
+          window.open("navbar.html","_self");
+        })
       }
       .bind(this));
     
@@ -87,7 +91,7 @@
     function(){
       this.toggle=false;
       this.vid.pause();
-
+      $(".arrowtoleft").css("visibility", "hidden");
     }.bind(this));
     }
     
