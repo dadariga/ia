@@ -48,7 +48,7 @@ margin: 0;
   width: 3%;
   top: 48.5%;
   left: 5%;
-  
+  visibility: hidden;
   z-index: 8;
   transition: margin-right 4s ease-in-out 1s;
 }
@@ -57,7 +57,7 @@ margin: 0;
   position: fixed;
   width: 3%;
   top: 48.5%;
-  visibility: visible;
+  visibility: hidden;
   z-index: 8;
   transition: margin-right 4s ease-in-out 1s;
 }
