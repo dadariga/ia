@@ -79,6 +79,7 @@
       function(){
         this.toggle = true;
         this.vid.play();
+        this.vid.unmuted();
         $(".arrowtoleft").css("visibility", "visible");
         $(".arrowtoleft").click(function(){
           window.open("navbar.html","_self");

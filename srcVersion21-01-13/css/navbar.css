@@ -12,11 +12,11 @@
 html, body{
 margin: 0;
   padding: 0;
-  
-  overflow-x: hidden;
+  overflow-y: hidden;
   z-index:1;
   font-family: 'Saira', sans-serif;
   color: white;
+
 }
 .right{
     display: block;
@@ -509,7 +509,7 @@ color: white;
   display: none;
 }
 #arjsDebugUIContainer{
-  
+  display: none;
 }
 #avideo{
   display: contents;
