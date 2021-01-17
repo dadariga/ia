@@ -5,9 +5,9 @@ function load(){
 window.onload = window.setTimeout(load, 4000);
 
 if(screen.availHeight > screen.availWidth){
-  alert("Please use Landscape-Mode!");
+  alert("Bitte Querformat verwenden!");
 }
 
 function hideIntro() {
-  window.location.replace("../navbar.html");
+  window.location.replace("../model-marker.html");
 }
