@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Intro - World of Arts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/load.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+ <!-- Splashscreen -->
+ <div id="intro-block">
+  <div id="splashscreen">
+    <img src="images/SVG/splash-screen_layer-1.svg" id="bg-l1" />
+    <img src="images/SVG/splash-screen_layer-2.svg" id="bg-l2" />
+    <img src="images/thd_small.png" id="loading-logo" alt="THD Logo" />
+    <div id="splash-text" class="intro-text">World of Arts</div>
+  </div>
+  <div id="tutorial">
+    <div
+      id="myCarousel"
+      class="carousel slide"
+      data-ride="carousel"
+      data-interval="false"
+    >
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <div id="carousel-text-1" class="intro-text">
+            Willkommen auf der virtuellen Ausstellung der Technischen
+            Hochschule Deggendorf
+          </div>
+        </div>
+
+        <div class="item">
+          <img id="karte" src="images/karte.png" />
+          <div id="karte-text" class="intro-text">
+            Auf dem Campus befinden sich Marker. Wo genau, sehen Sie auf der Karte!
+          </div>
+        </div>
+
+        <div class="item">
+          <p id="markers">
+            <img id="brille" src="images/patternBrille.png" />
+            <img id="auto" src="images/pattern-markerAuto.png" />
+          </p>
+          <div id="marker-text" class="intro-text">
+            Durch Scannen der Marker tauchen Sie in die Welt der Augmented
+            Reality ein und können sich verschiedene Projekte unserer
+            Studenten ansehen!
+          </div>
+          <input onclick="hideIntro()" id="close-intro" class="btn btn-primary " type="button" value="Intro schließen">
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+        <span><img id="arrowtoleft" src="images/svg/pfeillinks.svg"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="right carousel-control"
+        href="#myCarousel"
+        data-slide="next"
+      >
+        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+        <span><img id="arrowtoright" src="images/svg/pfeilrechts.svg"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  </body>
+</html>
