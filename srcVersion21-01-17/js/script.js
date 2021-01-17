@@ -46,7 +46,7 @@
   $(".closemap").click(function(){
     $(".closemap").css("visibility", "hidden");
     
-    window.open("navbar.html", "_self");
+    window.open("model-marker.html", "_self");
     $("#splashscreen").css("visibility","hidden");
       
   })
@@ -81,7 +81,7 @@
         this.vid.play();
         $(".arrowtoleft").css("visibility", "visible");
         $(".arrowtoleft").click(function(){
-          window.open("navbar.html","_self");
+          window.open("model-marker.html","_self");
         })
 		    $(".arrowtoright").css("visibility", "visible");
 		    $(".arrowtoright").click(function(){
@@ -116,7 +116,7 @@
         $("#infobutton").css("display", "block");
         $(".arrowtoright").css("visibility", "visible");
         $(".arrowtoright").click(function(){
-          window.open("markerwithvideo.html","_self");
+          window.open("video-marker.html","_self");
         })
 		if (textshown){
 			$(".projektfeld").css("display", "block");
@@ -136,7 +136,7 @@
         $("#infobutton").css("display", "block");
         $(".arrowtoleft").css("visibility", "visible");
         $(".arrowtoleft").click(function(){
-          window.open("markerwithvideo.html","_self");
+          window.open("video-marker.html","_self");
         })
 		  if (textshown){
 			  $(".projektfeld").css("display", "block");
@@ -224,7 +224,7 @@ markerBrille.bindPopup('<img class="mapicon" src="https://raw.githubusercontent.
 
 $(".closemap").click(function(){
 $(".closemap").css("visibility", "hidden");
-window.open("navbar.html", "_self");
+window.open("model-marker.html", "_self");
 })
 
 
