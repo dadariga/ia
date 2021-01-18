@@ -47,8 +47,8 @@ margin: 0;
   width: 3%;
   top: 48.5%;
   left: 5%;
-  
-  z-index: 8;
+  visibility: hidden;
+  z-index: 30;
   transition: margin-right 4s ease-in-out 1s;
 }
 .arrowtoright{
@@ -582,7 +582,7 @@ color: white;
   display: none;
 }
 #arjsDebugUIContainer{
-  
+  display: none;
 }
 #avideo{
   display: contents;
