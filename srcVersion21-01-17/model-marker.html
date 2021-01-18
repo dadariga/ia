@@ -17,17 +17,21 @@
   />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="js/load.js"></script>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/navbar.css">
-    <title>World of Arts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>THD World of Arts</title>
 </head>
 <body>
-  
+
+  <div id="splashscreen">
+    <div id="splash-text" class="intro-text">Loading...</div>
+  </div>
       <!-- Map Icon -->
 
     <navlinks style="position: fixed; left: 5%;top: 2%; z-index: 5;">
@@ -65,6 +69,7 @@
       <img src="images/burgermenu.png" class="dropdown iconedge">
       <img src="images/schliessen.png" class="close iconedge">
       <img src="images/pfeillinks.svg"class="arrowtoleft">
+      <img src="images/pfeilrechts.svg"class="arrowtoright">
       
         <div class="droppeddown">
             <div class="menu">
@@ -94,7 +99,7 @@
         <article id="footer">Kurs: 3D-Modellierung<br/>Ein 3D-Modell eines Oldtimers</article>
       </div>
       <div id="medientechniktext2">
-        <article id="header">Animationsfilm </article>
+        <article id="header">>_Project_C</article>
         <img src="images/pixelbrille.png" id="medientechnikicons">
         <article id="footer">Kurs: Grundlagen der Animation<br/>Ein Stop-Motion-Film</article>
       </div>
@@ -118,10 +123,6 @@
         <video id="vid" src="../Videos/DavisDivan.mp4" preload="auto" 
         loop crossorigin webkit-playsinline autoplay muted playsinline></video>
       </a-assets>
-      <a-assets>
-        <video id="vid" src="../Videos/DavisDivan.mp4" preload="auto" 
-        loop crossorigin webkit-playsinline autoplay muted playsinline></video>
-      </a-assets>
           
             <!--<a-marker preset="pattern" type='pattern' url='https://raw.githubusercontent.com/fermiumsunset/dump/main/pattern-markerAuto.patt'>
               <a-entity
@@ -132,6 +133,8 @@
             </a-marker>-->
             
             <a-marker markerhandler preset="pattern" type='pattern' id="a-marker"url='https://raw.githubusercontent.com/dadariga/ia/master/pattern/pattern-markerAuto.patt'>
+              <a-entity light="type:ambient;  intensity:0.3">
+              </a-entity> 
               <a-entity light="type:directional; castShadow:true;" position="5 20 5">
               </a-entity>
               <a-entity id="directionaltarget" shadow="receive: true"position="0 0 0"scale="0.5 0.5 0.5"rotation="-30 0 0"gltf-model="https://raw.githubusercontent.com/dadariga/ia/master/3DModelle/auto/carSchatten.gltf"></a-entity>'
@@ -139,7 +142,6 @@
             <a-entity camera></a-entity>
     </a-scene>
 
-  <script src="js/load.js"></script>
-  <script src="js/navbar.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

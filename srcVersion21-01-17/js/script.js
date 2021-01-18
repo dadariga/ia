@@ -14,6 +14,7 @@
     $(".menu").css("visibility", "visible");
       $(".dropdown").css("visibility", "hidden");
       $(".close").css("visibility", "visible");
+
   })
   $(".close").click(function(){
     $(".menu").css("visibility", "hidden");
@@ -45,7 +46,7 @@
   $(".closemap").click(function(){
     $(".closemap").css("visibility", "hidden");
     
-    window.open("navbar.html", "_self");
+    window.open("model-marker.html", "_self");
     $("#splashscreen").css("visibility","hidden");
       
   })
@@ -80,8 +81,16 @@
         this.vid.play();
         $(".arrowtoleft").css("visibility", "visible");
         $(".arrowtoleft").click(function(){
-          window.open("navbar.html","_self");
+          window.open("model-marker.html","_self");
         })
+		    $(".arrowtoright").css("visibility", "visible");
+		    $(".arrowtoright").click(function(){
+          window.open("carlowpoly.html","_self");
+        })
+        $("#infobutton").css("display", "block");
+        if (textshown){
+          $(".projektfeld").css("display", "block");
+        }
       }
       .bind(this));
     
@@ -91,30 +100,57 @@
       this.toggle=false;
       this.vid.pause();
       $(".arrowtoleft").css("visibility", "hidden");
+      $(".arrowtoright").css("visibility", "hidden");
+      $(".projektfeld").css("display", "none");
+      $("#infobutton").css("display", "none");
     }.bind(this));
     }
     
   })
+  
+  
       
   AFRAME.registerComponent("markerhandler", {
     init: function () {
       this.el.sceneEl.addEventListener('markerFound', () => {
         $("#infobutton").css("display", "block");
-        $(".arrowtoleft").css("visibility","visible");
-        $(".arrowtoleft").click(function(){
-          window.open("markerwithvideo.html","_self");
+        $(".arrowtoright").css("visibility", "visible");
+        $(".arrowtoright").click(function(){
+          window.open("video-marker.html","_self");
         })
 		if (textshown){
 			$(".projektfeld").css("display", "block");
-		}
+		  }
+    })
+	  this.el.sceneEl.addEventListener('markerLost', () => {
+      $("#infobutton").css("display", "none");
+      $(".projektfeld").css("display", "none");
+      $(".arrowtoright").css("visibility", "hidden");
+      })
+    }
+  });
+
+  AFRAME.registerComponent("markerhandlertwo", {
+    init: function () {
+      this.el.sceneEl.addEventListener('markerFound', () => {
+        $("#infobutton").css("display", "block");
+        $(".arrowtoleft").css("visibility", "visible");
+        $(".arrowtoleft").click(function(){
+          window.open("video-marker.html","_self");
+        })
+		  if (textshown){
+			  $(".projektfeld").css("display", "block");
+		  }
       })
 	  this.el.sceneEl.addEventListener('markerLost', () => {
 		$("#infobutton").css("display", "none");
     $(".projektfeld").css("display", "none");
-    $(".arrowtoleft").css("visibility","hidden");
+    $(".arrowtoleft").css("visibility", "hidden");
       })
     }
   });
+
+  
   
   /*$(".arrowtoleft").click(function(){
     $("body").remove("a-scene");
@@ -188,6 +224,7 @@ markerBrille.bindPopup('<img class="mapicon" src="https://raw.githubusercontent.
 
 $(".closemap").click(function(){
 $(".closemap").css("visibility", "hidden");
-window.open("navbar.html", "_self");
+window.open("model-marker.html", "_self");
 })
+
 

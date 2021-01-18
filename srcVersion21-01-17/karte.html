@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Karte</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="./js/leaflet-src.js"></script> 
+	
+	
+    <!--<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>-->
+	<style>
+		#mapid {
+			position: relative;
+			margin: 0px;
+			height: 96vh;
+			width: 99vw;
+			z-index: 1;
+			overflow-y: hidden;
+		}
+		.mapicon {
+			float:left;
+			height: 19px;
+			margin-left: -10px;
+			margin-right: 5px;
+		}
+.closemap{
+  position: fixed;
+  display: block;
+  left: 90%;
+  top: 5%;
+  width: 5%;
+  opacity: 100%;
+  z-index: 2;
+  visibility: visible;
+}
+.closemap:hover{
+  cursor: pointer;
+}
+   </style>
+
+	
+</head>
+<body>
+	<div id="mapid"></div>
+	<img src="images/schliessenmap.png" class="closemap">
+	<script src="js/script.js"></script>
+</body>
+</html>
